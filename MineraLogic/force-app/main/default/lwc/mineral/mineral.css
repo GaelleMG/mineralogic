@@ -1,0 +1,8 @@
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.slds-card__header {
+    padding-top: 0;
+}

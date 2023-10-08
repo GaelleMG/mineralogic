@@ -1,0 +1,13 @@
+<template>
+	<lightning-card>
+		<lightning-map 
+			map-markers={mapMarkers}
+			zoom-level={zoomLevel}
+			markers-title={labels.MineralTitle}
+			onmarkerselect={handleMarkerSelect}
+			selected-marker-value={selectedMarkerValue}
+			center={center}
+			list-view={listView}>
+		</lightning-map>
+	</lightning-card>
+</template>
