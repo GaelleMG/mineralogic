@@ -1,5 +1,6 @@
 <template>
 	<lightning-card>
+		<lightning-button label="Add Region" slot="actions" icon-name="utility:add" onclick={addRegion}></lightning-button>
 		<lightning-map 
 			map-markers={mapMarkers}
 			zoom-level={zoomLevel}
@@ -10,4 +11,5 @@
 			list-view={listView}>
 		</lightning-map>
 	</lightning-card>
+	<c-mineral-region-modal onregionchanged={updateRegionView}></c-mineral-region-modal>
 </template>
