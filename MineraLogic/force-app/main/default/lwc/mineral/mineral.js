@@ -43,6 +43,10 @@ export default class Mineral extends LightningElement {
 		this.template.querySelector('c-mineral-region-modal').displayModal();
 	}
 
+	compareRegions() {
+		this.template.querySelector('c-mineral-compare-modal').displayModal();
+	}
+
 	updateRegionView(event) {
 		const constLocation = [];
 		const loc = {
