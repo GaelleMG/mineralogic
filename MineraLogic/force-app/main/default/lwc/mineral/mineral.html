@@ -1,6 +1,7 @@
 <template>
 	<lightning-card>
-		<lightning-button label="Add Region" slot="actions" icon-name="utility:add" onclick={addRegion}></lightning-button>
+		<lightning-button class="button" label="Add Region" slot="actions" icon-name="utility:add" onclick={addRegion}></lightning-button>
+		<lightning-button class="button" label="Compare Regions" slot="actions" icon-name="utility:product_transfer" onclick={compareRegions}></lightning-button>
 		<lightning-map 
 			map-markers={mapMarkers}
 			zoom-level={zoomLevel}
@@ -12,4 +13,5 @@
 		</lightning-map>
 	</lightning-card>
 	<c-mineral-region-modal onregionchanged={updateRegionView}></c-mineral-region-modal>
+	<c-mineral-compare-modal map-markers={mapMarkers}></c-mineral-compare-modal>
 </template>
